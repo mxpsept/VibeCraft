@@ -6,9 +6,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Stars](https://img.shields.io/github/stars/yourusername/vibecraft?style=social)](https://github.com/yourusername/vibecraft)
+[![Stars](https://img.shields.io/github/stars/DylanMa/vibecraft?style=social)](https://github.com/DylanMa/vibecraft)
 
-[English](README.en.md) · [快速开始](#快速开始) · [模板列表](#模板列表) · [示例项目](#示例项目) · [贡献指南](CONTRIBUTING.md)
+[快速开始](#快速开始) · [模板列表](#模板列表) · [示例项目](#示例项目) · [贡献指南](CONTRIBUTING.md)
 
 </div>
 
@@ -84,25 +84,21 @@ project.md     ← 项目专属，只写本项目独有内容
 
 ## 快速开始
 
-### 方式一：CLI 安装（推荐）
+### 方式一：CLI 安装（开发中）
+
+> CLI 工具正在开发中，暂未发布。
 
 ```bash
-# 安装
+# 即将支持：
 npm install -g vibecraft
-
-# 在现有项目中初始化
-cd your-project
 vibecraft init
-
-# 选择模板后，交互式填写项目信息
-# VibeCraft 会生成定制化的文档体系
 ```
 
 ### 方式二：手动复制模板
 
 ```bash
 # Clone 仓库
-git clone https://github.com/yourusername/vibecraft.git
+git clone https://github.com/DylanMa/vibecraft.git
 
 # 复制基础模板到你的项目
 cp -r vibecraft/templates/* your-project/
@@ -115,8 +111,8 @@ cp -r vibecraft/templates/* your-project/
 直接查看 `examples/` 目录，有完整的真实项目示例：
 
 - [`examples/aiforge/`](examples/aiforge/) — 企业级 AI 应用平台
-- [`examples/saas-starter/`](examples/saas-starter/) — SaaS 产品脚手架  
-- [`examples/data-platform/`](examples/data-platform/) — 数据分析平台
+- `examples/saas-starter/` — SaaS 产品脚手架（即将上线）
+- `examples/data-platform/` — 数据分析平台（即将上线）
 
 ---
 
@@ -127,18 +123,18 @@ cp -r vibecraft/templates/* your-project/
 | 模板 | 适用场景 |
 |------|---------|
 | [`claude/fullstack-app.md`](templates/claude/fullstack-app.md) | 全栈 Web 应用 |
-| [`claude/api-service.md`](templates/claude/api-service.md) | 后端 API 服务 |
 | [`claude/ai-platform.md`](templates/claude/ai-platform.md) | AI 应用平台 |
-| [`claude/open-source-lib.md`](templates/claude/open-source-lib.md) | 开源库/工具 |
+| `claude/api-service.md` | 后端 API 服务（即将上线） |
+| `claude/open-source-lib.md` | 开源库/工具（即将上线） |
 
 ### DESIGN.md 模板
 
 | 模板 | 风格 | 适用场景 |
 |------|------|---------|
 | [`design/linear-dark.md`](templates/design/linear-dark.md) | Linear 暗色 | 开发者工具 / B 端 SaaS |
-| [`design/vercel-minimal.md`](templates/design/vercel-minimal.md) | Vercel 极简 | 技术产品 / 开发平台 |
-| [`design/stripe-professional.md`](templates/design/stripe-professional.md) | Stripe 专业 | 金融 / 企业服务 |
-| [`design/notion-warm.md`](templates/design/notion-warm.md) | Notion 温暖 | 生产力工具 / 知识库 |
+| `design/vercel-minimal.md` | Vercel 极简 | 技术产品 / 开发平台（即将上线） |
+| `design/stripe-professional.md` | Stripe 专业 | 金融 / 企业服务（即将上线） |
+| `design/notion-warm.md` | Notion 温暖 | 生产力工具 / 知识库（即将上线） |
 
 ### .rules 模板
 
@@ -146,11 +142,11 @@ cp -r vibecraft/templates/* your-project/
 |------|------|
 | [`rules/enterprise.md`](templates/rules/enterprise.md) | 企业级安全、日志、合规规范 |
 | [`rules/team-github-flow.md`](templates/rules/team-github-flow.md) | GitHub Flow 分支策略 |
-| [`rules/team-gitflow.md`](templates/rules/team-gitflow.md) | Gitflow 分支策略 |
 | [`rules/personal-python.md`](templates/rules/personal-python.md) | Python 工程师个人规范 |
-| [`rules/personal-typescript.md`](templates/rules/personal-typescript.md) | TypeScript 工程师个人规范 |
-| [`rules/project-fastapi.md`](templates/rules/project-fastapi.md) | FastAPI 项目专属规范 |
-| [`rules/project-nextjs.md`](templates/rules/project-nextjs.md) | Next.js 项目专属规范 |
+| `rules/team-gitflow.md` | Gitflow 分支策略（即将上线） |
+| `rules/personal-typescript.md` | TypeScript 工程师个人规范（即将上线） |
+| `rules/project-fastapi.md` | FastAPI 项目专属规范（即将上线） |
+| `rules/project-nextjs.md` | Next.js 项目专属规范（即将上线） |
 
 ---
 
