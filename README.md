@@ -29,7 +29,7 @@
 
 ```
 好的 CLAUDE.md = AI 永远在状态
-好的 DESIGN.md = AI 永远出好看的 UI  
+好的 DESIGN.md = AI 永远出好看的 UI
 好的 .rules/   = AI 永远遵守你的规范
 好的 ADR       = AI 永远理解你的决策
 ```
@@ -84,15 +84,59 @@ project.md     ← 项目专属，只写本项目独有内容
 
 ## 快速开始
 
-### 方式一：CLI 安装（开发中）
+### 方式一：CLI 安装（推荐）
 
-> CLI 工具正在开发中，暂未发布。
+> npm 包即将发布，当前可通过源码本地安装。
 
 ```bash
-# 即将支持：
-npm install -g vibecraft
+git clone https://github.com/DylanMa/vibecraft.git
+cd vibecraft
+npm install
+npm link
+
+cd your-project
 vibecraft init
 ```
+
+交互式引导会依次询问：
+
+```
+? 项目名称？ my-app
+? 一句话描述项目：一个面向开发者的效率工具
+? 选择 CLAUDE.md 模板：
+  ❯ 全栈 Web 应用  (fullstack-app.md)
+    AI 应用平台    (ai-platform.md)
+? 选择 DESIGN.md 模板：
+  ❯ Linear 暗色风格（开发者工具 / B 端 SaaS）
+    (跳过)
+? 选择 .rules/ 规则文件（空格多选）：
+  ❯ ◉ 企业级：安全 / 日志 / 合规规范
+    ◯ 团队级：GitHub Flow 分支策略
+    ◯ 个人级：Python 工程师个人规范
+? 添加 ADR 模板？ Yes
+
+  将生成以下文件：
+  ✔ CLAUDE.md
+  ✔ DESIGN.md
+  ✔ .rules/enterprise.md
+  ✔ docs/adr/TEMPLATE.md
+
+  目标目录：/path/to/my-app
+
+? 确认生成？ Yes
+
+  初始化完成！
+  ✔ CLAUDE.md
+  ✔ DESIGN.md
+  ✔ .rules/enterprise.md
+  ✔ docs/adr/TEMPLATE.md
+
+  下一步：
+  1. 打开 CLAUDE.md，将 {{占位符}} 替换为项目实际内容
+  2. 按需调整 .rules/ 中的规则文件
+```
+
+生成的文件中，所有 `{{占位符}}` 都已替换项目名称，其余内容按需填写即可。
 
 ### 方式二：手动复制模板
 
@@ -108,7 +152,7 @@ cp -r vibecraft/templates/* your-project/
 
 ### 方式三：参考示例项目
 
-直接查看 `examples/` 目录，有完整的真实项目示例：
+直接查看 `examples/` 目录，有完整的真实项目示例（所有占位符已填写）：
 
 - [`examples/aiforge/`](examples/aiforge/) — 企业级 AI 应用平台
 - `examples/saas-starter/` — SaaS 产品脚手架（即将上线）

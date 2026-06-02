@@ -1,0 +1,26 @@
+{
+  "name": "vibecraft",
+  "version": "0.1.0",
+  "description": "AI 辅助开发的方法论模板体系 — 让 Vibe Coding 有章可循",
+  "keywords": ["ai", "claude", "cursor", "vibe-coding", "template", "cli"],
+  "homepage": "https://github.com/DylanMa/vibecraft",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "vibecraft": "./bin/vibecraft.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "templates"
+  ],
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.3.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
